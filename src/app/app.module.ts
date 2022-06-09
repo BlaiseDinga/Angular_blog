@@ -11,6 +11,9 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import {TuiActionModule, TuiInputMonthRangeModule} from '@taiga-ui/kit';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {TuiButtonModule, TuiRootModule, TuiTextfieldControllerModule} from '@taiga-ui/core';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,14 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    TuiRootModule,
+    TuiActionModule,
+    TuiButtonModule,
+    TuiTextfieldControllerModule,
+    TuiInputMonthRangeModule,
+    TuiRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]
