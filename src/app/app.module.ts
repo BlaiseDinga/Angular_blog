@@ -14,6 +14,12 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import {TuiActionModule, TuiInputMonthRangeModule} from '@taiga-ui/kit';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TuiButtonModule, TuiRootModule, TuiTextfieldControllerModule} from '@taiga-ui/core';
+import {DropdownDirective} from "./shared/dropdown.directive";
+import {AppRoutingModule} from "./app-routing.module";
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import {ShoppingListService} from "./shopping-list/shopping-list.service";
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +30,10 @@ import {TuiButtonModule, TuiRootModule, TuiTextfieldControllerModule} from '@tai
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingListComponent,
-    ShoppingEditComponent
+    ShoppingEditComponent,
+    DropdownDirective,
+    RecipeStartComponent,
+    RecipeEditComponent
   ],
   imports: [
     BrowserModule,
@@ -35,9 +44,10 @@ import {TuiButtonModule, TuiRootModule, TuiTextfieldControllerModule} from '@tai
     TuiButtonModule,
     TuiTextfieldControllerModule,
     TuiInputMonthRangeModule,
-    TuiRootModule
+    TuiRootModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

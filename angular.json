@@ -28,10 +28,7 @@
               "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
               "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.js",
-              "node_modules/jquery/dist/jquery.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
