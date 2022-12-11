@@ -2,15 +2,17 @@
   style="cursor: pointer;"
   [routerLink]="[index]"
   routerLinkActive="active"
-  class="text-decoration-none text-dark">
-  <div class="row border my-3">
-    <div class="col-sm-8">
+  class="list-group-item clearfix my-3 text-dark">
+  <div class="row shadow">
+    <div class="col-12 pt-2">
       <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    </div>
+    <div class="col-sm-8">
       <p class="list-group-item-text">{{ recipe.description }}</p>
     </div>
-    <div class="col-sm-4 p-3">
+    <div class="col-sm-4 p-2 ">
       <!--    <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" class="img-fluid" >-->
-      <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-fluid" >
+      <img [src]="recipe.imagePath" alt="{{ recipe.name }}" class="img-fluid shadow" >
     </div>
   </div>
 </a>

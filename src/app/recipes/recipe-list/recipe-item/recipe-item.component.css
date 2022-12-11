@@ -1,0 +1,7 @@
+.list-group-item.active{
+  background-color: #f1f6f7 !important;;
+  border-color: #f1f6f7 !important;
+}
+.list-group-item{
+  border: none !important;
+}

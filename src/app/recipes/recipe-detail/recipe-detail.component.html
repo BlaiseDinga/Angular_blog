@@ -1,26 +1,26 @@
 <div class="row px-4">
+  <div class="col-12 py-3">
+    <h1>{{ recipe.name }}</h1>
+  </div>
   <div class="col-12">
     <img [src]="recipe.imagePath"
          alt="{{ recipe.name }}" class="img-fluid">
   </div>
-  <div class="col-12">
-    <h1>{{ recipe.name }}</h1>
-  </div>
-  <div class="col-12">
+  <div class="col-12 pt-4">
     <div class="btn-group dropdown">
-       <a class="btn btn-primary" (click)="onAddToShoppingList()">To shopping List</a>
-       <a class="btn btn-success mx-3" (click)="onEditRecipe()">Edit Recipe</a>
-        <a class="btn btn-danger">Delete Recipe</a>
+       <a class="btn btn-primary" (click)="onAddToShoppingList()">Zu Einkaufsliste hinzufügen</a>
+       <a class="btn btn-success mx-3" (click)="onEditRecipe()">Rezept bearbeiten</a>
+        <a class="btn btn-danger">Rezept löschen</a>
     </div>
   </div>
-  <div class="col-12 pt-4">
+  <div class="col-12 py-4">
     {{ recipe.description }}
   </div>
   <div class="col-12">
    <ul class="list-group">
      <li class="list-group-item"
      *ngFor="let ingredient of recipe.ingredients">
-       {{ ingredient.name }} - {{ ingredient.amount }}</li>
+       {{ ingredient.name }} - {{ ingredient.amount }} {{ ingredient.unit }}</li>
    </ul>
   </div>
 </div>
