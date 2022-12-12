@@ -19,6 +19,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import {ShoppingListService} from "./shopping-list/shopping-list.service";
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { TsAalenComponent } from './ts-aalen/ts-aalen.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     ShoppingEditComponent,
     RecipeStartComponent,
     RecipeEditComponent,
+    TsAalenComponent,
   ],
   imports: [
     BrowserModule,
