@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Recipe } from '../../recipe.model';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-recipe-item',
@@ -12,9 +11,6 @@ export class RecipeItemComponent implements OnInit {
   @Input() index: number;
 
   ngOnInit(): void {
-    $(document).ready(() => {
-      console.log("hello am here");
-    });
   }
 
 

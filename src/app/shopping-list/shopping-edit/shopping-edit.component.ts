@@ -3,6 +3,8 @@ import {Ingredient} from "../../shared/ingredient.model";
 import {ShoppingListService} from "../shopping-list.service";
 import {NgForm} from '@angular/forms';
 import {Subscription} from 'rxjs/Subscription';
+import * as $ from 'jquery';
+
 
 
 @Component({
@@ -40,6 +42,13 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
 
   Onsubmit(form: NgForm) {
     const value = form.value;
+   /* var datastring  = $("#jquery-content").serialize();
+    alert(
+      'Form info\n\n'
+      + "\tName:" + datastring.name + "\n"
+      + "\tMenge:" + datastring.amount +"\n"
+      + "\tEinheit:" + datastring.unit +"\n"
+    );*/
     const newIngredient = new Ingredient(value.name, value.amount, value.unit);
     if(this.editMode) {
       this.slService.updateIngredient(this.editedItemIndex, newIngredient);
