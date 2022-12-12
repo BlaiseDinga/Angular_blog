@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -34,7 +33,7 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     ShoppingEditComponent,
     RecipeStartComponent,
     RecipeEditComponent,
-  ],
+  ], //Die zu diesem NgModule gehörenden Komponenten , Direktiven und Pipes .
   imports: [
     BrowserModule,
     FormsModule,
@@ -47,8 +46,8 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     TuiInputMonthRangeModule,
     TuiRootModule,
     AppRoutingModule
-  ],
-  providers: [ShoppingListService],
-  bootstrap: [AppComponent]
+  ], //Andere Module, deren exportierte Klassen von in diesem NgModul deklarierten Komponentenvorlagen benötigt werden .
+  providers: [ShoppingListService], //Ersteller von Diensten , die dieses NgModul zur globalen Sammlung von Diensten beiträgt; Sie werden in allen Teilen der Anwendung zugänglich.
+  bootstrap: [AppComponent], //Die Hauptanwendungsansicht, Root-Komponente genannt , die alle anderen Anwendungsansichten hostet.
 })
-export class AppModule { }
+export class AppModule { } //Die Teilmenge der Deklarationen, die in den Komponentenvorlagen anderer NgModule sichtbar und verwendbar sein sollten.

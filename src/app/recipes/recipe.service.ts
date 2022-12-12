@@ -25,7 +25,7 @@ export class RecipeService{
     new Recipe('Hildes weihnachtlicher Apfelkuchen',
       'IButter schaumig rühren. Zucker und Vanillinzucker langsam einrieseln lassen. Die Eier nach und nach zugeben.' +
       'Mehl, Backpulver, Nüsse, Zimt, Kakao löffelweise unterrühren.',
-      'https://img.delicious.com.au/5aLcV7cG/del/2021/05/slow-roasted-butter-eggplant-curry-152139-2.jpg',
+      'https://bing.com/th?id=OSK.d41a1a55e2537ddaac1ab58204fc4cff',
       [new Ingredient('Butter', 250, 'g'),
                  new Ingredient('Zucker', 250, 'g'),
                  new Ingredient('Vanillinzucker', 1, 'Pck'),

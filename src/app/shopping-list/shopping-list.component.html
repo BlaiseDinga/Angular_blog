@@ -2,8 +2,8 @@
   <div class="col-xs-10">
     <app-shopping-edit></app-shopping-edit>
     <hr>
-    <ul class="list-group">
-        <a class="list-group-item my-2 w-50 shadow" style="cursor: pointer;"
+    <ul class="list-group w-50">
+        <a class="list-group-item my-2" style="cursor: pointer;"
            *ngFor="let ingredient of ingredients; let i = index"
            (click)="onEditItem(i)"
         >
